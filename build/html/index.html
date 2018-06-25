@@ -1,90 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Equals What?</title>
-    <link rel="stylesheet" href="../css/styles.css" attr="">
-    <script src="../scripts/app.js" charset="utf-8"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:400,700" type="text/css">
-  </head>
-  <body>
-    <div id="main">
-      <div id="header">
-        <div id="heading">
-          <h1>Equals What?</h1>
-        </div>
-        <div id="navbar">
-          <button onclick="window.location.href='index.html'" class="homelink"><i class="fas fa-home"></i>
-            <u>Home</u>
-          </button>
-          <div class="dropdown">
-            <button onclick="window.location.href='converterMainPage.html'" class="dropbtn">
-              <u>Converters</u><i class="fas fa-angle-down"></i>
-            </button>
-            <div class="dropdown-content"><a href="length.html">Length</a><a href="mass.html">Mass</a><a href="volume.html">Volume</a></div>
-          </div>
-        </div>
-      </div>
-      <div id="contentMain">
-        <div id="content">
-          <div id="about">
-            <h3>
-              <u>About Equals What?</u>
-            </h3><span> Equals What? is a converter for everything there is to convert,</span><br><span>from length, to mass, to volume, to temperature and so much more!</span>
-          </div>
-          <div id="howtouse">
-            <h3>
-              <u>How to use</u>
-            </h3><span>Just select what you would like to convert.</span><br><span>Then select which unit to convert from, and which unit to convert to.</span><span>Then just enter your values and hit<strong> Calculate!</strong></span>
-            <div id="example">
-              <h4></h4>
-              <u>    For Example</u>
-              <h5>This is a <a href="temperature.html">Temperature</a> converter</h5>
-              <div id="converterBox">
-                <div class="unitArea">
-                  <div class="unitCaption">
-                    <u>From</u>
-                  </div>
-                  <div class="unitArea">
-                    <div class="unitLeft">
-                      <input id="inputFrom" type="number" step="any" value="" onkeyup="exampleConvert()" oninput="exampleConvert(this.value)" placeholder="Enter Degrees:" class="inputNumber">
-                    </div>
-                    <div class="unitRight">
-                      <select id="selectFrom" onchange="exampleConvert()" class="selectOption inputOption">
-                        <option value="k">Kelvin</option>
-                        <option value="c">Celcius</option>
-                        <option value="f" selected="selected">Farhenheit</option>
-                      </select>
-                    </div>
-                    <button id="submitbtn" onclick="exampleConvert()">Calculate</button>
-                  </div>
-                </div>
-                <div id="to">
-                  <div class="unitArea to">
-                    <div class="unitCaption">
-                      <u>To</u>
-                    </div>
-                    <div class="unitArea">
-                      <div class="unitLeft">
-                        <input id="inputTo" type="number" step="any" value="" class="inputNumber">
-                      </div>
-                      <div class="unitRight">
-                        <select id="selectTo" class="selectOption inputOption">
-                          <option value="k">Kelvin</option>
-                          <option value="c" selected="selected">Celcius</option>
-                          <option value="f">Farhenheit</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+	<head>
+		<meta charset="utf-8">
+		<title>Equals What?</title>
+		<link rel="stylesheet" href="../css/styles.css" attr="">
+		<script src="../scripts/app.js" charset="utf-8"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:400,700" type="text/css">
+	</head>
+	<body>
+		<div id="main">
+			<div id="header">
+				<div id="heading">
+					<h1>Equals What?</h1>
+				</div>
+				<div id="navbar">
+					<button onclick="window.location.href='index.html'" class="homelink">
+						<i class="fas fa-home"></i>
+						<u>Home</u>
+					</button>
+					<div class="dropdown">
+						<button onclick="window.location.href='converterMainPage.html'" class="dropbtn">
+							<u>Converters</u>
+							<i class="fas fa-angle-down"></i>
+						</button>
+						<div class="dropdown-content">
+							<a href="length.html">Length</a>
+							<a href="mass.html">Mass</a>
+							<a href="volume.html">Volume</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="contentMain">
+				<div id="content">
+					<div id="about">
+						<h3>
+							<u>About Equals What?</u>
+						</h3>
+						<span>
+							Equals What? is a converter for everything there is to convert,</span><br>
+						<span>from length, to mass, to volume, to temperature and so much more!</span>
+					</div>
+					<div id="howtouse">
+						<h3>
+							<u>How to use</u>
+						</h3>
+						<span>Just select what you would like to convert.</span><br>
+						<span>Then select which unit to convert from, and which unit to convert to.</span><span>Then just enter your values and hit<strong>
+								Calculate!</strong>
+						</span>
+						<div id="example">
+							<h4></h4>
+							<u>
+								For Example</u>
+							<h5>This is a
+								<a href="temperature.html">Temperature</a>
+								converter</h5>
+							<div id="converterBox">
+								<div class="unitArea">
+									<div class="unitCaption">
+										<u>From</u>
+									</div>
+									<div class="unitArea">
+										<div class="unitLeft">
+											<input id="inputFrom" type="number" step="any" value="" onkeyup="exampleConvert()" oninput="exampleConvert(this.value)" placeholder="Enter Degrees:" class="inputNumber">
+										</div>
+										<div class="unitRight">
+											<select id="selectFrom" onchange="exampleConvert()" class="selectOption inputOption">
+												<option value="k">Kelvin</option>
+												<option value="c">Celcius</option>
+												<option value="f" selected="selected">Farhenheit</option>
+											</select>
+										</div>
+										<button id="submitbtn" onclick="exampleConvert()">Calculate</button>
+									</div>
+								</div>
+								<div id="to">
+									<div class="unitArea to">
+										<div class="unitCaption">
+											<u>To</u>
+										</div>
+										<div class="unitArea">
+											<div class="unitLeft">
+												<input id="inputTo" type="number" step="any" value="" class="inputNumber">
+											</div>
+											<div class="unitRight">
+												<select id="selectTo" class="selectOption inputOption">
+													<option value="k">Kelvin</option>
+													<option value="c" selected="selected">Celcius</option>
+													<option value="f">Farhenheit</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
