@@ -1,0 +1,32 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset='utf-8')
+		title Equals What?
+		link(rel='stylesheet', href='../css/styles.css', attr='')
+		script(src='../scripts/app.js', charset='utf-8')
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+		link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.0.13/css/all.css', integrity='sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp', crossorigin='anonymous')
+		link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Lato:400,700', type='text/css')
+	body
+	#main
+		#header
+			#heading
+				h1 Equals What?
+			#navbar
+				button.homelink(onclick="window.location.href='index.html'")
+				i.fas.fa-home
+				u Home
+				.dropdown
+					button.dropbtn(onclick="window.location.href='converterMainPage.html'")
+					u Converters
+					i.fas.fa-angle-down
+				.dropdown-content
+					a(href='length.html') Length
+					a(href='mass.html') Mass
+					a(href='volume.html') Volume
+			#contentMain
+				#content
+					#converterHeader
+						h3
+							u Length Converter

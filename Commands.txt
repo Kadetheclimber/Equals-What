@@ -1,0 +1,39 @@
+cd desktop\webdevelopment\websites\EqualsWhat
+
+JADE:
+    jade -w source\jade -o build\html -P
+
+SASS:
+	sass -w source\sass:build\css
+
+Atom:
+	Body:
+		alt-1: Switches   Between Open Files
+		alt-backspace:   Deletes Whole Word 
+		alt-f3:   selects words and adds cursor
+		alt-left/right:   moves current left & right
+		alt-up/down:    Moves Current Word
+		alt-shift-down/up:   increment/decrement number by 10
+		alt-up/down:   increment/decrement number by .1
+		shift+home:    selects current line
+		ctrl+]/[:    Indents/Outdents Current Line
+		ctrl+alt+f2:    Adds Bookmarks
+		ctrl+alt+j:    Matching Pair In HTML
+		ctrl + d:    Selects and Finds Current Word
+
+	System:
+		ctrl + \: Toggles ee View
+
+
+
+Open
+50 40 70.8
+ee
+<html>
+	<head>
+
+	</head>
+</html>
+html
+	head
+		title Kade

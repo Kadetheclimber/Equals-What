@@ -1,0 +1,76 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title Equals What?
+    link(rel='stylesheet', href='../css/styles.css', attr='')
+    script(src='../scripts/app.js', charset='utf-8')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.0.13/css/all.css', integrity='sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp', crossorigin='anonymous')
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Lato:400,700', type='text/css')
+  body
+    #main
+      #header
+        #heading
+          h1 Equals What?
+        #navbar
+          button.homelink(onclick="window.location.href='index.html'")
+            i.fas.fa-home
+            u Home
+          .dropdown
+            button.dropbtn(onclick="window.location.href='converterMainPage.html'")
+              u Converters
+              i.fas.fa-angle-down
+            .dropdown-content
+              a(href='length.html') Length
+              a(href='mass.html') Mass
+              a(href='volume.html') Volume
+      #contentMain
+        #content
+          #about
+            h3
+              u About Equals What?
+            span  Equals What? is a converter for everything there is to convert,
+            br
+            span from length, to mass, to volume, to temperature and so much more!
+          #howtouse
+            h3
+              u How to use
+            span Just select what you would like to convert.
+            br
+            span Then select which unit to convert from, and which unit to convert to.
+            span
+              | Then just enter your values and hit
+              strong  Calculate!
+            #example
+              h4
+              u     For Example
+              h5
+                | This is a 
+                a(href='temperature.html') Temperature
+                |  converter
+              #converterBox
+                .unitArea
+                  .unitCaption
+                    u From
+                  .unitArea
+                    .unitLeft
+                      input#inputFrom.inputNumber(type='number', step='any', value='', onkeyup='exampleConvert()', oninput='exampleConvert(this.value)' placeholder="Enter Degrees:")
+                    .unitRight
+                      select#selectFrom.selectOption.inputOption(onchange='exampleConvert()')
+                        option(value='k') Kelvin
+                        option(value='c') Celcius
+                        option(value='f', selected='selected') Farhenheit
+                    button#submitbtn(onclick='exampleConvert()') Calculate
+                #to
+                  .unitArea.to
+                    .unitCaption
+                      u To
+                    .unitArea
+                      .unitLeft
+                        input#inputTo.inputNumber(type='number', step='any', value='')
+                      .unitRight
+                        select#selectTo.selectOption.inputOption
+                          option(value='k') Kelvin
+                          option(value='c', selected='selected') Celcius
+                          option(value='f') Farhenheit
