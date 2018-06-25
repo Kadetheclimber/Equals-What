@@ -9,6 +9,25 @@
   border-radius: 5px;
 }
 
+#contentMain h3 {
+  font-size: 35px;
+}
+
+#contentMain #content {
+  padding-top: 2px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+
+#contentMain h4 {
+  font-weight: 500;
+  font-size: 25px;
+}
+
+#contentMain h5 {
+  font-weight: 400;
+}
+
 html, body {
   margin: 0px;
   padding: 0px;
