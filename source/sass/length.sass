@@ -3,7 +3,7 @@
 	margin-left: auto
 	margin-right: auto
 	margin-top: 20px
-	width: 85%
+	width: 90%
 	background-color: $main-background-color
 	font-size: $main-content-font-size
 	color: white
@@ -12,13 +12,45 @@
 		font-size: $content-heading-font-size
 	#content
 		padding-top: 2px
-		padding-left: 30px
+		padding-left: 15px
+		padding-right: 15px
 		padding-bottom: 30px
 	h4
 		font-weight: 500
 		font-size: $system-title-font-size
 	h5
 		font-weight: 400
+		font-size: 30px
+		margin-top: 8px
+		margin-bottom: 8px
+	#convertersContainer
+		// line-height: 5
+	#metricConverters
+		margin-left: auto
+		margin-right: auto
+		display: grid
+		grid-template-columns: 25% 25% 25% 25%
+		grid-column-gap: 5px
+		padding-right: 10px
+		.unitbox
+			background-color: $secondary-background-color
+			border-radius: 10px
+			padding: 10px
+			input
+				width: 80%
+				heigth: 80%
+				font-size: 20px
+				&:focus
+					outline-style: none
+				&::-webkit-inner-spin-button, &::-webkit-outer-spin-button
+					-webkit-appearance: none
+		.lastItemOnRow
+			padding-right: 10spx
+
+
+
+
+
 
 
 //  Navbar Styling

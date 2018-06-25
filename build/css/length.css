@@ -2,7 +2,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
-  width: 85%;
+  width: 90%;
   background-color: #ff5c33;
   font-size: 20px;
   color: white;
@@ -15,7 +15,8 @@
 
 #contentMain #content {
   padding-top: 2px;
-  padding-left: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
   padding-bottom: 30px;
 }
 
@@ -26,6 +27,42 @@
 
 #contentMain h5 {
   font-weight: 400;
+  font-size: 30px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+#contentMain #metricConverters {
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-column-gap: 5px;
+  padding-right: 10px;
+}
+
+#contentMain #metricConverters .unitbox {
+  background-color: #ff3300;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#contentMain #metricConverters .unitbox input {
+  width: 80%;
+  heigth: 80%;
+  font-size: 20px;
+}
+
+#contentMain #metricConverters .unitbox input:focus {
+  outline-style: none;
+}
+
+#contentMain #metricConverters .unitbox input::-webkit-inner-spin-button, #contentMain #metricConverters .unitbox input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+#contentMain #metricConverters .lastItemOnRow {
+  padding-right: 10spx;
 }
 
 html, body {
