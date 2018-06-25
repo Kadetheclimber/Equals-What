@@ -43,5 +43,7 @@ function lengthCalculate(source, val) {
         kmBox.value = String(val / 1000000) + " km";
         inchBox.value = String(val * 0.03937) + " in";
         feetBox.value = String(val * 0.003281) + " ft";
+        yardBox.value = String(val * 0.001094) + " yd";
+        milesBox.value = String(val * 0.0000006214) + " mi";
     }
 }
